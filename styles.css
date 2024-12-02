@@ -1,0 +1,262 @@
+/*Ajout de tous les keyframes */
+
+
+@keyframes blink {
+    50% { opacity: 0; }
+}
+
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes marquee {
+  0% { transform: translateX(-10%); }
+  50% { transform: translateX(20%); }
+}
+
+@keyframes diagonalMarquee {
+  0% { transform: translateX(70%) translateY(-70%); }
+  20% { transform: translateX(-10%) translateY(10%); }
+}
+
+
+
+/* début propriété */
+
+html {
+    background: aliceblue;
+    width: 46em;
+    border: solid;
+    border-color: #ffffff;
+    border-radius: 5px;
+}
+
+body {
+    background-color: #336699;
+    width: 45em;
+}
+
+div#Logotype {
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background-color: #24426a;
+    display: inline-flex;
+    float : left ;
+}
+div#headnav {
+    display: inline-flex;
+    margin-left: 10em;
+}
+div#accueil, div#Services, div#Vente, div#Blog, div#Contact {
+    border-radius: 6px;
+    background-color: #24426a;
+    font: menu;
+    padding: 0.2em;
+    margin-right: 0.5em;
+    color: #ffffff;
+    font-size: large;
+    width: 73px;
+    text-align: center;
+}
+.ligne, div#ligne1, div#ligne2 {
+    font: icon;
+    font-weight: bold;
+    color: #ccced6;
+    font-palette: light;
+    font-optical-sizing: auto;
+    border-radius: 5px;
+    padding: 0.01em;
+    margin-top: 0.5em;
+    text-shadow: 0 0 12px #000000;
+   font-family: 'Roboto Black', sans-serif;
+}
+div#ligne2 {
+    margin: 1.5em 0em 0em -4em;
+    font-family: 'Roboto Medium', sans-serif;
+}
+
+section {
+    background-color:#336699;
+}
+
+
+
+/* Entête avec animation*/
+
+.Avantages {
+  margin-top: 0.2em;
+  display: flex;
+  width: -webkit-fill-available;
+  animation : diagonalMarquee 1.2s linear,  blink 3s infinite;
+}
+.animation1{
+  overflow: hidden;
+  white-space: nowrap;
+  animation: marquee 0.5s linear ;
+}
+.animation2{
+  overflow: hidden;
+  white-space: nowrap;
+  animation: marquee 1s linear ;
+}
+ .animation3 {
+  overflow: hidden;
+  white-space: nowrap;
+  animation: marquee 0.4s linear ;
+}
+
+.animation1 {
+    width: 34%;
+}
+.animation2 {
+    width: 33%;
+}
+.animation3 {
+    width: 33%;
+}
+.animation1, .animation2 , .animation3 {
+    color: white;
+    background-color: #336699;
+    text-align: -webkit-center;
+    border-radius: 4px
+}
+
+
+
+/* Image et ses alentours */
+
+img#first-illu {
+    width: 60%;
+}
+article#Illustration1 {
+    display: flex;
+}
+
+
+
+/*   tourner en 360° */
+
+
+.container {
+    margin-left: 16em;
+    display: flex;
+    margin-top: -16em;
+    margin-bottom: 0em;
+    width: -webkit-fill-available;
+    height: max-content;
+}
+.scrolling-text {
+    animation: rotation 1.001s linear infinite;
+}
+.scrolling-text1 {
+    animation: rotation 1.001s linear infinite;
+}
+.scrolling-text2 {
+    animation: rotation 1.002s linear infinite;
+}
+.scrolling-text3 {
+    animation: rotation 1.003s linear infinite;
+}
+.scrolling-text4 {
+    animation: rotation 1.004s linear infinite;
+}
+.scrolling-text5 {
+    animation: rotation 1.005s linear infinite;
+}
+.scrolling-text6 {
+    animation: rotation 1.006s linear infinite;
+}
+.scrolling-text7 {
+    animation: rotation 1.007s linear infinite;
+}
+.scrolling-text8 {
+    animation: rotation 1.008s linear infinite;
+}
+.scrolling-text9 {
+    animation: rotation 1.009s linear infinite;
+}
+.scrolling-text10 {
+    animation: rotation 1.010s linear infinite;
+}
+.scrolling-text11 {
+    animation: rotation 1.011s linear infinite;
+}
+
+  .scrolling-text, .scrolling-text1, .scrolling-text2 ,  .scrolling-text3, .scrolling-text4 ,  .scrolling-text5,  .scrolling-text6, .scrolling-text7 , .scrolling-text8 , .scrolling-text9, .scrolling-text10, .scrolling-text11 {
+    margin-right: 0.1em;
+    background-color: #24426a52;
+    width: 10px;
+    height: 170px;
+    border-radius: 35px;
+}
+
+
+@keyframes rotation {
+  0% { transform: translate(-5%, 0) rotate(0deg); }
+  100% { transform: translate(0, -5%) rotate(360deg); }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.tornado-text {
+    margin-left: 15em;
+    height: 200px;
+    width: 200px;
+    margin-top: 100em;
+    animation: tornado 5s infinite linear ,  blink2 5s infinite alternate ;
+}
+
+
+@keyframes tornado {
+  0% { transform: rotate(0deg); }
+  50% { transform: rotate(360deg); }
+  75% { transform: rotate(340deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes blink2 {
+  0% { opacity: 0; }
+  25% { opacity: 0; }
+  50% { opacity: 1; }
+  75% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+
+
+
+
+
+.long {
+    height: 40em;
+}
+
+
+
+
+
+
+
+
+
+
